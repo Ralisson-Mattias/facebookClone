@@ -35,7 +35,7 @@ export default () => {
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.cardStory}>
-                <ImageBackground  source={Img_1} style={styles.storys}>
+                <ImageBackground  source={Img_2} style={styles.storys}>
 
                     <Image source={Avatar} style={styles.cardStoryAvatar}/>
 

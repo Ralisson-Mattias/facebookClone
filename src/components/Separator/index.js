@@ -4,7 +4,7 @@ import colors from '../../functions/colors'
 
 export default () => {
     return <View style={{
-        height: 12,
+        height: 10,
         width: '100%',
         backgroundColor: colors.gray
     }}/>
