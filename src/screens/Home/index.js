@@ -1,15 +1,18 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Header from '../../components/Header'
+import Separator from '../../components/Separator'
 
 const Home = () => {
     return (
-        <SafeAreaView style={{ flex: 1 }}>
+        <View style={{ flex: 1 }}>
             
-            <Text>Home</Text>
+            <Header />
+
+            <Separator />
             
-        </SafeAreaView>
+        </View>
     )
 }
 

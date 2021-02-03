@@ -19,7 +19,18 @@ function MyTabs() {
         showIcon: true,
         activeTintColor: colors.primary,
         inactiveTintColor: colors.gray_dark,
+        style: {
+          elevation: 0,
+          borderBottomWidth: 1,
+          borderBottomColor: colors.gray
+        },
+        indicatorStyle: {
+          borderTopRightRadius: 20,
+          borderTopLeftRadius: 20,
+        },
       }}
+
+
     >
       <Screen
         name="Home"
@@ -31,6 +42,7 @@ function MyTabs() {
             color={color}
           />
         }}
+
       />
       <Screen
         name="Friends"

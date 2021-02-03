@@ -16,8 +16,9 @@ export default () => {
             screenOptions={{
                 headerStyle: {
                     elevation: 0,
-                }
+                },
             }}
+            
         >
             <Screen
                 name="TopNavigator"
