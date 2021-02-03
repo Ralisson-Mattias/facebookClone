@@ -31,14 +31,14 @@ const Header = () => {
                 <TouchableOpacity style={styles.buttonHeaderBottom}>
 
                     <Fontisto name="photograph" size={24} color={colors.green} />
-                    <Text style={styles.buttonHeaderBottomText}>Ao vivo</Text>
+                    <Text style={styles.buttonHeaderBottomText}>Foto</Text>
 
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonHeaderBottom}>
 
                     <MaterialCommunityIcons name="video-plus" size={24} color={colors.purple} />
-                    <Text style={styles.buttonHeaderBottomText}>Ao vivo</Text>
+                    <Text style={styles.buttonHeaderBottomText}>Sala</Text>
 
                 </TouchableOpacity>
 
