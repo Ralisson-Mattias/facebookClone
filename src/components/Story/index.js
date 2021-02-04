@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
         borderWidth: 1,
         borderColor: colors.gray,
-        marginHorizontal: 10
+        marginHorizontal: 5
     },
     storys: {
         flex: 1,

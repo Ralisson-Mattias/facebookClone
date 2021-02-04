@@ -5,12 +5,15 @@ import TopNavigator from '../TopNavigator'
 import { AntDesign, FontAwesome, Fontisto } from '@expo/vector-icons'
 import colors from '../../functions/colors'
 import { Dimensions, StyleSheet, TouchableOpacity, View } from 'react-native'
+import Home from '../../screens/Home'
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native'
 
 const { Navigator, Screen } = createStackNavigator()
 
 const { width, height } = Dimensions.get('window')
 
 export default () => {
+
     return (
         <Navigator
             screenOptions={{
@@ -18,27 +21,28 @@ export default () => {
                     elevation: 0,
                 },
             }}
-            
+
         >
             <Screen
                 name="TopNavigator"
                 component={TopNavigator}
                 options={{
                     headerTitle: () => <AntDesign name="facebook-square" size={30} color={colors.primary} />,
-                    headerRight: () => {
-                        return (
-                            <View style={styles.headerRight}>
-                                <TouchableOpacity style={styles.headerRightButton}>
-                                    <FontAwesome name="search" size={24} color="black" />
-                                </TouchableOpacity>
+                        headerRight: () => {
+                            return (
+                                <View style={styles.headerRight}>
+                                    <TouchableOpacity style={styles.headerRightButton}>
+                                        <FontAwesome name="search" size={24} color="black" />
+                                    </TouchableOpacity>
 
-                                <TouchableOpacity style={styles.headerRightButton}>
-                                    <Fontisto name="messenger" size={24} color="black" />
-                                </TouchableOpacity>
-                            </View>
-                        )
-                    },
+                                    <TouchableOpacity style={styles.headerRightButton}>
+                                        <Fontisto name="messenger" size={24} color="black" />
+                                    </TouchableOpacity>
+                                </View>
+                            )
+                        },
                 }}
+
             />
         </Navigator>
     )
@@ -56,3 +60,19 @@ const styles = StyleSheet.create({
         borderRadius: width / 2
     }
 })
+
+
+// headerTitle: () => <AntDesign name="facebook-square" size={30} color={colors.primary} />,
+//     headerRight: () => {
+//         return (
+//             <View style={styles.headerRight}>
+//                 <TouchableOpacity style={styles.headerRightButton}>
+//                     <FontAwesome name="search" size={24} color="black" />
+//                 </TouchableOpacity>
+
+//                 <TouchableOpacity style={styles.headerRightButton}>
+//                     <Fontisto name="messenger" size={24} color="black" />
+//                 </TouchableOpacity>
+//             </View>
+//         )
+//     },
